@@ -14,5 +14,7 @@ namespace TaskManagement.Domain.Interfaces
         Task<List<TaskItem>> GetAllAsync();
         Task UpdateAsync(TaskItem taskItem);
         Task DeleteAsync(TaskItem taskItem);
+
+        Task AddtestGit(TaskItem taskItem);
     }
 }
