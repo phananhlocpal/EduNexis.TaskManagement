@@ -23,6 +23,7 @@ namespace TaskManagement.Domain.Events
 
             public string EventType { get; }
 
+            public string ExtraInfo => $"{Title} - Created by {CreatedBy} at {CreatedAt}";
             public TaskItemCreated(string title, string description, DateTime? dueDate, string createdBy, DateTime createdAt)
             {
                 Title = title;
